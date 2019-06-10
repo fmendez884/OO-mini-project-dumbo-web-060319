@@ -9,6 +9,7 @@ class Allergy
     def initialize(name, ingredient)
         @name = name
         @ingredient = ingredient
+<<<<<<< HEAD
         @count = 0
         find = @@all.find do |allergy|
             allergy.ingredient == ingredient
@@ -34,4 +35,12 @@ class Allergy
     #         end 
     #     end
     # end 
+=======
+        @@all << self
+    end 
+
+    def count 
+      @@all.select {|allergy| ingredient == allergy.ingredient}.size
+    end
+>>>>>>> 92342e779964743ccc4d8deb7d90def75ab23b56
 end
