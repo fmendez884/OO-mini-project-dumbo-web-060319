@@ -1,30 +1,5 @@
 class Recipe
 
-<<<<<<< HEAD
-@@all = []
-
- def initialize
-    @@all << self
- end 
- #returns all of the recipe instance
- def self.all
-     @@all
- end
-
- #should return the recipe instance with the highest number of users
- def self.most_popular
-
- end
-
- #should return the user instances who have recipe cards with this recipe
- def users
-   #User.all.select {|user| }
- end
-
- # should return all of the Ingredients in this recipe that are allergens for Users in our system.
- def ingredients
- end
-=======
   @@all = []
   attr_accessor :name
 
@@ -60,8 +35,8 @@ class Recipe
  
   # should return all of the Ingredients in this recipe that are allergens for Users in our system.
   def ingredients
-  	
+    # Allergy.all.map {|allergy| allergy.ingredient}.uniq
+    RecipeIngredients.all.select {|rec_ing| rec_ing.recipe == self}.map {}
   end
->>>>>>> 92342e779964743ccc4d8deb7d90def75ab23b56
 
 end

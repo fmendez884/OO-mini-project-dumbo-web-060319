@@ -18,10 +18,7 @@ class User
 
     def add_recipe_card(recipe, date, rating)
         recipe_card = RecipeCard.new(recipe, date, rating)
-<<<<<<< HEAD
-=======
         recipe_card.user = self
->>>>>>> 92342e779964743ccc4d8deb7d90def75ab23b56
     end 
 
     def declare_allergy(ingredient)

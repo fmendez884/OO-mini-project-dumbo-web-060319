@@ -1,11 +1,7 @@
 require_relative '../config/environment.rb'
 
 user1 = User.new
-<<<<<<< HEAD
-pizza = Recipe.new
-=======
 pizza = Recipe.new("pizza")
->>>>>>> 92342e779964743ccc4d8deb7d90def75ab23b56
 cheese = Ingredient.new
 peanut = Ingredient.new
 
